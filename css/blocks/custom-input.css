@@ -1,0 +1,30 @@
+.custom-input{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.custom-input__field{
+    font-family: inherit;
+    border-radius: 8px;
+    border: 2px solid #b7b7b7;
+    font-size: 16px;
+    line-height: 24px;
+    color: #a3a3a3;
+    padding: 16px 22px;
+}
+
+.custom-input__label{
+    position: absolute;
+    left: 15px;
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    color: #475009;
+    background-color: #fff;
+    padding: 4px 1px;
+    user-select: none;
+}

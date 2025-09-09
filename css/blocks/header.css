@@ -1,5 +1,9 @@
 .header {
   padding: 30px 0 0;
+  position: fixed;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 1;
 }
 
 .header__top {
@@ -60,6 +64,7 @@
 .header__user-link {
   align-items: center;
   display: flex;
+  position: relative;
 }
 
 .header__user-count {
@@ -74,6 +79,9 @@
   justify-content: center;
   line-height: 10px;
   width: 17px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
 }
 
 .header__burger {

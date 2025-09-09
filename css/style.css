@@ -13,6 +13,8 @@
 @import "blocks/order.css";
 @import "blocks/order-form.css";
 @import "blocks/custom-radio.css";
+@import "blocks/custom-input.css";
+@import "blocks/custom-checkbox.css";
 @import "blocks/order-card.css";
 @import "blocks/social.css";
 @import "blocks/footer.css";

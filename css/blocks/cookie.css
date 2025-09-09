@@ -7,6 +7,13 @@
   padding: 40px 30px;
   background-color: #FFFFFF;
   display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 210px;
+}
+
+.cookie--active{
+  display: block;
 }
 
 .cookie__text {
