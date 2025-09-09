@@ -17,3 +17,8 @@
   flex-direction: column;
   gap: 20px;
 }
+
+.order-form__btn{
+  width: 345px;
+  margin-top: 60px;
+}

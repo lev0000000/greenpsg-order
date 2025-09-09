@@ -5,14 +5,60 @@
     position: relative;
 }
 
+.custom-input--error .custom-input__field{
+    border: 2px solid rgba(255, 115, 115, 1)
+}
+
+.custom-input--error .custom-input__error{
+    display: block;
+}
+
+.custom-input--icon .custom-input__field{
+    padding: 16px 22px 16px 56px;
+}
+
 .custom-input__field{
     font-family: inherit;
     border-radius: 8px;
     border: 2px solid #b7b7b7;
     font-size: 16px;
     line-height: 24px;
-    color: #a3a3a3;
+    color: #475009;
     padding: 16px 22px;
+}
+
+.custom-input__field:hover{
+    border-color: rgba(71, 80, 9, 0.7);
+    outline: none;
+}
+
+.custom-input__field:focus-visible{
+    border-color: #475009;
+    outline: none;
+}
+
+.custom-input__field:hover ~ .custom-input__icon{
+    color: rgba(71, 80, 9, 0.7);
+}
+
+.custom-input__field:focus-visible~ .custom-input__icon{
+    color: rgba(71, 80, 9, 0.7);
+}
+
+.custom-input__field:focus-visible + .custom-input__label{
+    color: rgba(71, 80, 9, 0.7);
+}
+
+.custom-input__field::placeholder{
+    color:#a3a3a3;
+}
+.custom-input__field[disabled]{
+    background-color: #fff;
+    border-color: rgba(173, 173, 173, 0.4);
+}
+
+.custom-input__field[disabled]::placeholder{
+    color: rgba(173, 173, 173, 0.4);
 }
 
 .custom-input__label{
@@ -27,4 +73,42 @@
     background-color: #fff;
     padding: 4px 1px;
     user-select: none;
+}
+
+.custom-input__field[disabled] + .custom-input__label{
+    color: rgba(173, 173, 173, 0.4);
+}
+
+.custom-input__icon{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color:#B7B7B7;
+    pointer-events: none;
+}
+
+.custom-input__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    color: #475009;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.custom-input__error{
+    color:#FF7373;
+    font-size: 10px;
+    line-height: 10px;
+    margin-top: 5px;
+    display: none;
 }
